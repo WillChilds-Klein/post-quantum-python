@@ -1,8 +1,6 @@
 import ssl
 import socket
 
-# assert "AWS-LC" in ssl.OPENSSL_VERSION
-
 CERT_STORE = "/etc/ssl/certs/ca-certificates.crt"
 REGION = "us-west-1"
 HOST = f"secretsmanager.{REGION}.amazonaws.com"

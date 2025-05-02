@@ -1,16 +1,10 @@
 FROM debian:trixie-20250428
 
-# Set noninteractive installation
-ENV DEBIAN_FRONTEND=noninteractive
-
-# Update and install dependencies
 RUN apt-get update
-#RUN apt search openssl && /bin/false
 RUN apt-get install -y \
     python3=3.13.3-1 \
     python3-venv=3.13.3-1 \
-    openssl=3.5.0-1 \
-    ""
+    openssl=3.5.0-1
 
 COPY . /app
 WORKDIR /app

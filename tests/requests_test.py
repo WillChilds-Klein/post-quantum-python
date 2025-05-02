@@ -3,7 +3,6 @@ import ssl
 
 import requests
 
-
 REGION = "us-east-1"
 ENDPOINT = f"https://secretsmanager.{REGION}.amazonaws.com/ping"
 
