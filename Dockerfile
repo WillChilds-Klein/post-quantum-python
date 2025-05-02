@@ -19,4 +19,4 @@ RUN python3 -m venv /app/.venv \
     && . /app/.venv/bin/activate \
     && python3 -m pip install -r /app/requirements.txt
 
-CMD ["/bin/bash", "--init-file", "/app/.venv/bin/activate", "-i"]
+ENTRYPOINT ["/bin/bash", "--init-file", "/app/.venv/bin/activate", "-i"]
